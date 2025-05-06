@@ -1,5 +1,5 @@
 include_directories(catch2) # v2.2.1
-
+include_directories(${CMAKE_SOURCE_DIR}/lib/fmt)
 file(GLOB_RECURSE FILENAMES *.cpp)
 
 add_executable(run_tests ${FILENAMES})
